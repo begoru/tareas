@@ -5,10 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>
-        Hola Mundo
-    </h1>
+    <nav>
+        <h1>Lista de Tareas</h1>
+    </nav>
+    <main>
+        <button onclick="openModal()" id="addButton" >+</button>
+        <div id="modal">
+            <div>
+                <label >Ingresa una tarea nueva</label>
+                
+                <input id="taskText" onkeyup="aceptButtonEnabled(event)"type="text">
+                
+                <button id="cancelButton" onclick="closeModal()">CANCELAR</button>
+                
+                <button id="acceptButton" onclick="addTask()" disabled>ACEPTAR</button>
+            </div>    
+        </div>
+        <ul id="taskList">
+            <li>
+                No hay tareas
+            </li>            
+        </ul>
+    </main>
+    <script src="javascript.js"></script>
 </body>
 </html>

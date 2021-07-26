@@ -1,0 +1,31 @@
+#addButton{
+    display: block;
+}
+#modal{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 10px;
+
+}
+#modal div label{
+    display: block;
+    margin-top: 20px;
+}
+#modal div input{
+    display: block;
+    margin-top: 20px;
+}
+#modal div button:first-child{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#modal div #acceptButton{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.deleteButton{
+    margin-left: 10px;
+}
